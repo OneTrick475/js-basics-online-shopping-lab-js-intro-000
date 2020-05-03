@@ -21,7 +21,7 @@ function viewCart() {
     return 'Your shopping cart is empty.'
   }
   else if(cart[0] !== undefined && cart[1] === undefined){
-    return `In your cart, you have ${cart[0].}`
+    return `In your cart, you have ${cart[0]}.`
   }
   else if(cart[1] !== undefined && cart[2] === undefined){
     return `In your cart, you have ${cart[0].}, and ${cart[1]}`
