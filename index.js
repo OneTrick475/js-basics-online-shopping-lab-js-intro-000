@@ -19,7 +19,7 @@ return `${item} has been added to your cart.`
 function viewCart() {
   if(cart[0] === undefined){
     return 'Your shopping cart is empty.'
-  } 
+  }
   else if(cart[0] !== undefined && cart[1] === undefined){
     return `In your cart, you have ${cart[0].}`
   }
