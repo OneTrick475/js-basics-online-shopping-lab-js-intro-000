@@ -17,7 +17,18 @@ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
-  // write your code here
+  if(cart[0] === undefined){
+    return 'Your shopping cart is empty.'
+  } 
+  else if(cart[0] !== undefined && cart[1] === undefined){
+    return `In your cart, you have ${cart[0].}`
+  }
+  else if(cart[1] !== undefined && cart[2] === undefined){
+    return `In your cart, you have ${cart[0].}, and ${cart[1]}`
+  }
+  else {
+    return `In your cart, you have ${cart[0].}, ${cart[1]}, and ${cart[3]}`
+  }
 }
 
 function total() {
