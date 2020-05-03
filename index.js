@@ -34,7 +34,6 @@ function viewCart() {
 function total() {
   var j=0;
   for(var i=0; i<cart.length; i++){
-
     j=j+cart[i].itemPrice;
   }
   return j;
@@ -45,7 +44,7 @@ function removeFromCart(item) {
     return `That item is not in your cart.`
   }
   else{
-    delete itm[item];
+    delete cart.item;
   }
 }
 
