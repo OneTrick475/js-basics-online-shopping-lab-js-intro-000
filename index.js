@@ -44,7 +44,7 @@ function removeFromCart(item) {
     return `That item is not in your cart.`
   }
   else{
-    delete cart[item];
+    delete itm[item];
   }
 }
 
