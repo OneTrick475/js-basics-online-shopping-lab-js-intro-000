@@ -34,13 +34,18 @@ function viewCart() {
 function total() {
   for(var i=0; i<=cart.length; i++){
     var j=0;
-    j=j+cart[i];
+    j=j+;
   }
   return j;
 }
 
 function removeFromCart(item) {
-  // write your code here
+  if(cart[item] === undefined){
+    return `This item is not in your cart.`
+  }
+  else{
+    delete cart[item];
+  }
 }
 
 function placeOrder(cardNumber) {
