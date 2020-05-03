@@ -32,10 +32,10 @@ function viewCart() {
 }
 
 function total() {
-
+  var j=0;
   for(var i=0; i<cart.length; i++){
-    var j=0;
-    j=j+`${cart[i].itemPrice}`;
+    
+    j=j+cart[i].itemPrice;
   }
   return j;
 }
