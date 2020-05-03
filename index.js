@@ -24,15 +24,19 @@ function viewCart() {
     return `In your cart, you have ${cart[0]}.`
   }
   else if(cart[1] !== undefined && cart[2] === undefined){
-    return `In your cart, you have ${cart[0]}., and ${cart[1]}.`
+    return `In your cart, you have ${cart[0]}, and ${cart[1]}.`
   }
   else {
-    return `In your cart, you have ${cart[0]}, ${cart[1]}, and ${cart[3]}.`
+    return `In your cart, you have ${cart[0]}, ${cart[1]}, and ${cart[2]}.`
   }
 }
 
 function total() {
-  // write your code here
+  for(var i=0; i<=cart.length; i++){
+    var j=0;
+    j=j+i;
+  }
+  return j;
 }
 
 function removeFromCart(item) {
